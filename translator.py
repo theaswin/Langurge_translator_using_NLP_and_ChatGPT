@@ -1,22 +1,21 @@
 import openai
-import os
+
 
 # Set up OpenAI API credentials
-# openai.api_key = os.environ["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"]
 openai.api_key = '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'
 
 # Set the text to be translated
 
 
 # Set the source and target languages
-source = input("enter source langure")
-tar = input("Enter target")
+source = input("enter source langure: ")
+tar = input("Enter target: ")
 
 source_language = source
 target_language = tar
 
 
-text = input("Enter text ")
+text = input("Enter text: ")
 
 
 # Set the model and parameters
