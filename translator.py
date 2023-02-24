@@ -3,6 +3,8 @@ import pytesseract
 import cv2
 import re
 from pytesseract import Output
+from get_string import out
+
 openai.api_key = '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'
 
 
@@ -13,9 +15,8 @@ source_language = source
 target_language = tar
 
 
-text = input("enter text")
+text = out
 
-print(type(text))
 # Set the model and parameters
 model_engine = "text-davinci-002"
 temperature = 0.7
