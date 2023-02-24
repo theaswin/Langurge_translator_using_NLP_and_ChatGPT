@@ -15,3 +15,5 @@ pattern = '[a-zA-Z]+'
 word = re.findall(pattern,datas)
 
 out = " ".join(word)
+
+print("Please RUN the 'translator.py' file")
