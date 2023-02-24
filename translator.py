@@ -1,13 +1,11 @@
 import openai
-
-
-# Set up OpenAI API credentials
+import pytesseract
+import cv2
+import re
+from pytesseract import Output
 openai.api_key = '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'
 
-# Set the text to be translated
 
-
-# Set the source and target languages
 source = input("enter source langure: ")
 tar = input("Enter target: ")
 
@@ -15,9 +13,9 @@ source_language = source
 target_language = tar
 
 
-text = input("Enter text: ")
+text = input("enter text")
 
-
+print(type(text))
 # Set the model and parameters
 model_engine = "text-davinci-002"
 temperature = 0.7
